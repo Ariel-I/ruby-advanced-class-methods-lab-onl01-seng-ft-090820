@@ -39,7 +39,7 @@ class Song
     else 
       self.create_by_name(name)
     end 
-    #self.find_by_name
+    #shorter version with less repetition in method self.find_by_name(name) || self.create_by_name
   end 
   
   def self.alphabetical 
