@@ -11,14 +11,14 @@ class Song
   end
 
   def self.create
-     self.new 
+     self.new = @name
       
     end 
     name 
   end 
   
   def self.new_by_name
-    new_by_name = name 
+    new_by_name = @name 
   end 
   
   def self.create_by_name
