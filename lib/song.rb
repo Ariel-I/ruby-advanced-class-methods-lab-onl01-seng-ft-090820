@@ -53,7 +53,7 @@ class Song
   end 
   
   def self.new_from_filename(filename)
-    
+    split.filename 
   end 
   
   def self.create_from_file 
