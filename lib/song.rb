@@ -2,11 +2,6 @@ class Song
   attr_accessor :name, :artist_name
   @@all = []
 
-  def initialize(name, artist_name)
-  
-  
-  end 
-
   def self.all
     @@all
   end
@@ -52,7 +47,14 @@ class Song
     # or all.sort_by { |song| song.name }
   end 
   
+   def self.new_from_filename(filename)
+    #split_filename = filename.slice(0, filename.length-4).split("-")
+    #split_filename - filename.chop.chop.chop.chop.split("-")
+    split_filename = filename.chomp(".mp3").split("-")
+  end 
   
+  def self.create_from_filename(filename) 
+  end
   
   def self.destroy_all
     @@all.clear
